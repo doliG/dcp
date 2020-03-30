@@ -12,5 +12,5 @@ test("car(cons(3, 4)) should return 3", () => {
 });
 
 test("cdr(cons(3, 4)) should return 4", () => {
-  expect(car(cons(3, 4))).toBe(3);
+  expect(cdr(cons(3, 4))).toBe(4);
 });
