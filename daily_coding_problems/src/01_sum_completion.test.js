@@ -2,7 +2,7 @@ const {
   resolveDumb,
   resolveReadable,
   resolveSmart
-} = require("./1_sum_completion");
+} = require("./01_sum_completion");
 
 test("resolveDumb([10, 15, 3, 7], 17) should return true", () => {
   expect(resolveDumb([10, 15, 3, 7], 17)).toBe(true);

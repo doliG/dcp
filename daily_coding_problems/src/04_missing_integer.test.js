@@ -1,4 +1,4 @@
-const firstMissingInt = require("./4_missing_integer");
+const firstMissingInt = require("./04_missing_integer");
 
 test("first missing integer in [1, 2, 0] is 3", () => {
   expect(firstMissingInt([1, 2, 0])).toBe(3);

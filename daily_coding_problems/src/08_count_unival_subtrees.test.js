@@ -1,4 +1,4 @@
-const countUnivalTree = require("./8_count_unival_subtrees");
+const countUnivalTree = require("./08_count_unival_subtrees");
 
 xtest("It should return 5 on example tree", () => {
   //    0

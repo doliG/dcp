@@ -1,4 +1,4 @@
-const largestSum = require('./9_largest_sum');
+const largestSum = require('./09_largest_sum');
 
 // Statement tests
 test('Largest sum of [2, 4, 6, 2, 5] should be 13 (2 + 6 + 5)', () => {

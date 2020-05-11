@@ -1,4 +1,4 @@
-const solve = require("./7_decode_message");
+const solve = require("./07_decode_message");
 
 test("resolve('111') should return 3", () => {
   expect(solve("111")).toBe(3);
