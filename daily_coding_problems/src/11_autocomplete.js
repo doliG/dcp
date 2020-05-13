@@ -36,7 +36,6 @@ class Trie {
 
   insert(key) {
     let node = this.root;
-
     for (const char of key) {
       if (!(char in node.children)) {
         node.children[char] = new Node()
@@ -46,16 +45,30 @@ class Trie {
     node.value = key
   }
 
-  // Return all elements contained by the Trie matching regexp as a list
-  findAll(regexp) {
-    return []
+  findAll(prefix) {
+    let node = this.root
+    for (const char of prefix) {
+      if (char in node.children) {
+        node = node.children[char]
+      } else {
+        return undefined
+      }
+    }
+
+    console.log(node.children)
+    for (const child of node.children) console.log(child)
+    return results
   }
 }
 
 function autoComplete(query, list) {
   const trie = new Trie()
   list.forEach(word => trie.insert(word))
-  return trie.findAll(new RegExp(`^${query}`))
+  console.log(trie)
+  return trie.findAll(query)
 }
+
+res = autoComplete('de', ['dog', 'deer', 'deal'])
+console.log(res);
 
 module.exports = autoComplete;
